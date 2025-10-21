@@ -194,14 +194,14 @@
         arr_assign_ru: arr_assign_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &en GREATER_THAN>;
+            bindings = <&to_en &kp EQUAL &kp GREATER_THAN &to_ru>;
             label = "ARR_ASSIGN_RU";
         };
 
         obj_prop_ru: obj_prop_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &en GT>;
+            bindings = <&to_en &kp MINUS &kp GT &to_ru>;
             label = "OBJ_PROP_RU";
         };
     };
