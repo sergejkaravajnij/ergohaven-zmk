@@ -230,6 +230,12 @@
             #binding-cells = <0>;
             bindings = <&row_copy>, <&row_cut>;
         };
+
+        tog_layer_on: tog_layer_on {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TOG_LAYER_ON";
+            #binding-cells = <1>;
+        };
     };
 
     keymap {
@@ -330,7 +336,7 @@
         debugger+sym_en {
             bindings = <
 &to 0           &trans  &trans      &trans  &kp LS(DLLR)  &kp LS(AT)                    &kp LS(CARET)  &kp LS(UNDER)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &kp LC(F2)
-&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &to 9
+&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &tog_layer_on 9
 &kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8         &kp F9        &kp F10        &trans
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
