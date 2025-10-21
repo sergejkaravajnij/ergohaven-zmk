@@ -336,7 +336,7 @@
         debugger+sym_en {
             bindings = <
 &to 0           &trans  &trans      &trans  &kp LS(DLLR)  &kp LS(AT)                    &kp LS(CARET)  &kp LS(UNDER)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &kp LC(F2)
-&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &mo 13
+&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &mo 0
 &kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8         &kp F9        &kp F10        &trans
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
@@ -368,23 +368,7 @@
                                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
-
-        test_cond {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        debug_lock {
-            if-layers = <9 13>;
-            then-layer = <9>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
