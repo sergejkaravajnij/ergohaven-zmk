@@ -204,6 +204,13 @@
             bindings = <&to_en &kp MINUS &kp GT &to_ru>;
             label = "OBJ_PROP_RU";
         };
+
+        debug_artisan: debug_artisan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp H &kp P &kp MINUS &kp D &kp SPACE &kp A &kp R &kp T &kp I &kp S &kp A &kp N &kp SPACE>;
+            label = "DEBUG_ARTISAN";
+        };
     };
 
     behaviors {
@@ -295,7 +302,7 @@
             bindings = <
 &to 0   &kp LA(N1)  &kp LA(N2)     &kp LA(N3)  &kp LA(N4)     &kp LA(N5)                                    &kp LA(N6)     &kp LA(N7)     &kp LA(N8)     &kp LA(N9)     &kp LA(N0)    &kp LS(LA(INS))
 &trans  &trans      &kp LA(LC(S))  &trans      &kp LS(LC(F))  &kp LS(LC(G))                                 &trans         &kp LS(LC(J))  &kp LC(LS(K))  &kp LC(LA(L))  &trans        &trans
-&trans  &trans      &trans         &trans      &kp LA(LC(V))  &trans         &trans          &trans         &kp LA(LC(N))  &kp LA(LC(M))  &php_artisan   &cmp_style     &cmp_analyze  &trans
+&trans  &trans      &trans         &trans      &kp LA(LC(V))  &trans         &trans          &trans         &kp LA(LC(N))  &kp LA(LC(M))  &php_artisan   &cmp_style     &cmp_analyze  &debug_artisan
                                                &trans         &trans         &kp LA(LEFT)    &kp LA(RIGHT)  &trans         &trans
             >;
 
@@ -323,7 +330,7 @@
         debugger+sym_en {
             bindings = <
 &to 0           &trans  &trans      &trans  &kp LS(DLLR)  &kp LS(AT)                    &kp LS(CARET)  &kp LS(UNDER)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &kp LC(F2)
-&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &trans
+&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &tog 9
 &kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8         &kp F9        &kp F10        &trans
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
