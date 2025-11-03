@@ -54,16 +54,6 @@
             key-positions = <33 34>;
             layers = <1>;
         };
-
-        double_quotes {
-            bindings = <&kp DQT>;
-            key-positions = <5 6>;
-        };
-
-        quotes {
-            bindings = <&kp SQT>;
-            key-positions = <4 7>;
-        };
     };
 
     macros {
