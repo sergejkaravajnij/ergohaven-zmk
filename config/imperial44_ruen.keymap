@@ -54,6 +54,12 @@
             key-positions = <33 34>;
             layers = <1>;
         };
+
+        geo_lng {
+            bindings = <&layer_ge>;
+            key-positions = <37 36>;
+            layers = <0 1 2>;
+        };
     };
 
     macros {
@@ -201,6 +207,24 @@
             bindings = <&kp P &kp H &kp P &kp MINUS &kp D &kp SPACE &kp A &kp R &kp T &kp I &kp S &kp A &kp N &kp SPACE>;
             label = "DEBUG_ARTISAN";
         };
+
+        to_ge: to_ge {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N3))>;
+            label = "TO_GE";
+            wait-ms = <0>;
+            tap-ms = <30>;
+        };
+
+        layer_ge: layer_ge {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 2 &to_ge>;
+            label = "LAYER_GE";
+            tap-ms = <30>;
+            wait-ms = <0>;
+        };
     };
 
     behaviors {
@@ -233,10 +257,10 @@
 
         en {
             bindings = <
-&kp ESC  &kp Q            &kp W            &lt 12 E           &lt 6 R              &lt 5 T                                  &lt 11 Y   &lt 6 U              &kp I              &kp O            &kp P               &kp BACKSPACE
-&kp TAB  &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LEFT_CONTROL F  &kp G                                    &kp H      &hrm LEFT_CONTROL J  &hrm LEFT_SHIFT K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMI  &kp SINGLE_QUOTE
-&to_en   &kp Z            &kp X            &kp C              &kp V                &kp B        &trans         &trans       &kp N      &kp M                &kp COMMA          &kp DOT          &kp SLASH           &layer_ru
-                                                              &sk LCTRL            &lt 2 COMMA  &lt 7 SPACE    &lt 9 ENTER  &lt 3 DOT  &sk LEFT_SHIFT
+&kp ESC  &kp Q            &kp W            &lt 13 E           &lt 7 R              &lt 6 T                                   &lt 12 Y   &lt 7 U              &kp I              &kp O            &kp P               &kp BACKSPACE
+&kp TAB  &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LEFT_CONTROL F  &kp G                                     &kp H      &hrm LEFT_CONTROL J  &hrm LEFT_SHIFT K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMI  &kp SINGLE_QUOTE
+&to_en   &kp Z            &kp X            &kp C              &kp V                &kp B        &trans         &trans        &kp N      &kp M                &kp COMMA          &kp DOT          &kp SLASH           &layer_ru
+                                                              &sk LCTRL            &lt 3 COMMA  &lt 8 SPACE    &lt 10 ENTER  &lt 4 DOT  &sk LEFT_SHIFT
             >;
 
             display-name = "Eng";
@@ -245,10 +269,20 @@
         ru {
             display-name = "Rus";
             bindings = <
-&kp ESC    &kp Q            &kp W            &lt 12 E           &lt 6 R              &lt 5 T                                      &lt 11 Y      &lt 6 U              &kp I              &kp P            &kp LBKT            &kp BACKSPACE
+&kp ESC    &kp Q            &kp W            &lt 13 E           &lt 7 R              &lt 6 T                                      &lt 12 Y      &lt 7 U              &kp I              &kp P            &kp LBKT            &kp BACKSPACE
 &kp TAB    &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LEFT_CONTROL F  &kp G                                        &kp H         &hrm LEFT_CONTROL J  &hrm LEFT_SHIFT K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMI  &kp SINGLE_QUOTE
 &layer_en  &kp Z            &kp X            &kp C              &kp V                &kp B           &trans         &trans        &kp N         &kp M                &kp COMMA          &kp DOT          &kp SLASH           &to_ru
-                                                                &sk LCTRL            &lt 2 RU_COMMA  &lt 8 SPACE    &lt 10 ENTER  &lt 4 RU_DOT  &sk LEFT_SHIFT
+                                                                &sk LCTRL            &lt 3 RU_COMMA  &lt 9 SPACE    &lt 11 ENTER  &lt 5 RU_DOT  &sk LEFT_SHIFT
+            >;
+        };
+
+        GE {
+            display-name = "ქართული";
+            bindings = <
+&kp ESC    &kp Q            &kp W            &lt 13 E           &lt 7 R              &lt 6 T                                   &lt 12 Y   &lt 7 U              &kp I              &kp O            &kp P               &kp BACKSPACE
+&kp TAB    &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_SHIFT D  &hrm LEFT_CONTROL F  &kp G                                     &kp H      &hrm LEFT_CONTROL J  &hrm LEFT_SHIFT K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMI  &kp SINGLE_QUOTE
+&layer_en  &kp Z            &kp X            &kp C              &kp V                &kp B        &trans         &trans        &kp N      &kp M                &kp COMMA          &kp DOT          &kp SLASH           &layer_ru
+                                                                &sk LCTRL            &lt 3 COMMA  &lt 8 SPACE    &lt 10 ENTER  &lt 4 DOT  &sk LEFT_SHIFT
             >;
         };
 
