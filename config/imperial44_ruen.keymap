@@ -313,10 +313,10 @@
         sym_ru {
             display-name = "Sym RU";
             bindings = <
-&to 0              &en LEFT_BRACKET  &en RIGHT_BRACKET  &en LEFT_BRACE  &en RIGHT_BRACE  &arr_assign_ru                    &kp QMARK  &kp N7  &kp N8  &kp N9  &none      &kp LC(PRINTSCREEN)
-&kp LS(LC(GRAVE))  &en LESS_THAN     &en GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop_ru                      &kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans
-&none              &en FSLH          &en PIPE           &kp BSLH        &trans           &trans          &trans    &trans  &kp FSLH   &kp N1  &kp N2  &kp N3  &trans     &kp K_CONTEXT_MENU
-                                                                        &trans           &trans          &trans    &trans  &trans     &trans
+&to 0              &en LEFT_BRACKET  &en RIGHT_BRACKET  &en LEFT_BRACE  &en RIGHT_BRACE  &arr_assign_ru                    &kp RU_COMMA  &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp LC(PRINTSCREEN)
+&kp LS(LC(GRAVE))  &en LESS_THAN     &en GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop_ru                      &kp N0        &kp N4  &kp N5  &kp N6  &kp PLUS      &kp RU_MINUS
+&none              &en FSLH          &en PIPE           &kp BSLH        &trans           &trans          &trans    &trans  &kp RU_DOT    &kp N1  &kp N2  &kp N3  &sk RU_SLASH  &kp K_CONTEXT_MENU
+                                                                        &kp RU_DOT       &kp RU_COMMA    &trans    &trans  &trans        &trans
             >;
         };
 
@@ -366,23 +366,23 @@
         debugger+sym_en {
             bindings = <
 &to 0           &trans  &trans      &trans  &kp LS(DLLR)  &kp LS(AT)                    &kp LS(CARET)  &kp LS(UNDER)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &kp LC(F2)
-&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &mo 0
-&kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8         &kp F9        &kp F10        &trans
+&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &kp PRINTSCREEN
+&kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8         &kp F9        &kp F10        &kp LC(PRINTSCREEN)
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
 
-            label = "Debugger + Sym_EN";
+            label = "Dbg + Sym_EN";
         };
 
         debugger+sym_ru {
             bindings = <
 &to 0           &trans  &trans      &trans  &en LS(DLLR)  &en LS(AT)                    &en LS(CARET)  &kp LS(UNDER)  &en LS(AMPS)       &kp LS(STAR)  &en LS(POUND)  &kp LC(F2)
-&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(AMPERSAND)  &kp LS(PLUS)  &kp EQUAL      &trans
-&kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8             &kp F9        &kp F10        &trans
+&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(AMPERSAND)  &kp LS(PLUS)  &kp EQUAL      &kp PRINTSCREEN
+&kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8             &kp F9        &kp F10        &kp LC(PRINTSCREEN)
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
 
-            label = "Debugger + Sym_RU";
+            label = "Dbg + Sym_RU";
         };
 
         mentions {
