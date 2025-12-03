@@ -398,10 +398,10 @@
 
         win_manage {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LG(LEFT)        &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)       &kp LA(F4)
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LS(LG(LEFT))    &kp LG(DOWN)  &kp LG(UP)  &kp LS(LG(RIGHT))   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none     &trans  &trans  &kp LS(LA(LC(F3)))  &trans        &trans      &kp LS(LA(LC(F4)))  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp F23  &kp F24  &trans  &trans  &trans                    &trans  &kp LG(LEFT)        &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)       &kp LA(F4)
+&trans  &trans   &trans   &trans  &trans  &trans                    &trans  &kp LS(LG(LEFT))    &kp LG(DOWN)  &kp LG(UP)  &kp LS(LG(RIGHT))   &trans
+&trans  &trans   &trans   &trans  &trans  &trans  &none     &trans  &trans  &kp LS(LA(LC(F3)))  &trans        &trans      &kp LS(LA(LC(F4)))  &trans
+                                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Win Mng";
