@@ -296,7 +296,7 @@
                                                                                           &trans      &trans         &trans    &kp BACKSPACE  &kp LC(BACKSPACE)  &kp LC(DEL)
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym_en {
@@ -349,7 +349,7 @@
                                                             &trans     &trans         &trans    &mkp MB1  &mkp MB2          &trans
             >;
 
-            label = "Mouse + Sym_EN";
+            label = "Mouse+Sym";
         };
 
         mouse+sym_ru {
@@ -360,7 +360,7 @@
                                                                 &trans     &trans         &trans    &mkp MB1  &mkp MB2          &trans
             >;
 
-            label = "Mouse + Sym_RU";
+            label = "Mouse+Smb";
         };
 
         debugger+sym_en {
@@ -371,7 +371,7 @@
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
 
-            label = "Dbg + Sym_EN";
+            label = "Dbg+Sym";
         };
 
         debugger+sym_ru {
@@ -382,7 +382,7 @@
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
 
-            label = "Dbg + Sym_RU";
+            label = "Dbg+Smb";
         };
 
         mentions {
@@ -393,7 +393,7 @@
                                     &trans  &trans      &trans    &trans  &trans  &trans
             >;
 
-            label = "Mentions";
+            label = "Mention";
         };
 
         win_manage {
@@ -404,7 +404,7 @@
                                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "Windows Manage";
+            label = "Win Mng";
         };
     };
 
