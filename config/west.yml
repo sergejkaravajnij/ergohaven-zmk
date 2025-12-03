@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ergohaven
       url-base: https://github.com/ergohaven
+    - name: sergei
+      url-base: https://github.com/sergejkaravajnij
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,8 +15,8 @@ manifest:
       remote: ergohaven
       revision: eh
     - name: ergohaven-zmk-qube
-      remote: ergohaven
-      revision: eh
+      remote: sergei
+      revision: sk
     - name: zmk-raw-hid
       remote: ergohaven
       revision: main
