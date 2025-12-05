@@ -310,7 +310,7 @@
         sym_en {
             bindings = <
 &to 0              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &arr_assign                    &kp COMMA  &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp LC(PRINTSCREEN)
-&kp LS(LC(GRAVE))  &kp LESS_THAN     &kp GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop                      &kp N0     &kp N4  &kp N5  &kp N6  &kp PLUS      &kp RU_MINUS
+&kp LS(LC(GRAVE))  &kp LESS_THAN     &kp GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop                      &kp N0     &kp N4  &kp N5  &kp N6  &kp PLUS      &layer_lock 4
 &none              &kp FSLH          &kp PIPE           &kp BSLH        &none            &none        &trans    &trans  &kp DOT    &kp N1  &kp N2  &kp N3  &kp SLASH     &kp K_CONTEXT_MENU
                                                                         &kp DOT          &kp COMMA    &trans    &trans  &trans     &trans
             >;
@@ -322,7 +322,7 @@
             display-name = "Sym RU";
             bindings = <
 &to 0              &en LEFT_BRACKET  &en RIGHT_BRACKET  &en LEFT_BRACE  &en RIGHT_BRACE  &arr_assign_ru                    &kp RU_COMMA  &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp LC(PRINTSCREEN)
-&kp LS(LC(GRAVE))  &en LESS_THAN     &en GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop_ru                      &kp N0        &kp N4  &kp N5  &kp N6  &kp PLUS      &kp RU_MINUS
+&kp LS(LC(GRAVE))  &en LESS_THAN     &en GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop_ru                      &kp N0        &kp N4  &kp N5  &kp N6  &kp PLUS      &layer_lock 5
 &none              &en FSLH          &en PIPE           &kp BSLH        &trans           &trans          &trans    &trans  &kp RU_DOT    &kp N1  &kp N2  &kp N3  &kp RU_SLASH  &kp K_CONTEXT_MENU
                                                                         &kp RU_DOT       &kp RU_COMMA    &trans    &trans  &trans        &trans
             >;
@@ -341,7 +341,7 @@
         ide {
             bindings = <
 &to 0   &kp LA(N1)  &kp LA(N2)     &kp LA(N3)  &kp LA(N4)     &kp LA(N5)                                    &kp LA(N6)     &kp LA(N7)     &kp LA(N8)     &kp LA(N9)     &kp LA(N0)    &kp LS(LA(INS))
-&trans  &trans      &kp LA(LC(S))  &trans      &kp LS(LC(F))  &kp LS(LC(G))                                 &trans         &kp LS(LC(J))  &kp LC(LS(K))  &kp LC(LA(L))  &trans        &trans
+&trans  &trans      &kp LA(LC(S))  &trans      &kp LS(LC(F))  &kp LS(LC(G))                                 &trans         &kp LS(LC(J))  &kp LC(LS(K))  &kp LC(LA(L))  &trans        &layer_lock 7
 &trans  &trans      &trans         &trans      &kp LA(LC(V))  &trans         &trans          &trans         &kp LA(LC(N))  &kp LA(LC(M))  &php_artisan   &cmp_style     &cmp_analyze  &debug_artisan
                                                &trans         &trans         &kp LA(LEFT)    &kp LA(RIGHT)  &trans         &trans
             >;
@@ -352,7 +352,7 @@
         mouse+sym_en {
             bindings = <
 &to 0                  &kp LS(DQT)  &kp LS(DLLR)  &kp SQT   &kp MINUS  &kp LS(PRCNT)                      &kp LS(DQT)       &kp SQT             &trans          &trans        &trans              &trans
-&kp LA(LC(Y))          &kp LS(AT)   &kp LS(DLLR)  &kp SEMI  &kp MINUS  &kp COLON                          &msc MOVE_Y(10)   &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT     &trans
+&kp LA(LC(Y))          &kp LS(AT)   &kp LS(DLLR)  &kp SEMI  &kp MINUS  &kp COLON                          &msc MOVE_Y(10)   &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT     &layer_lock 8
 &kp LA(LC(LG(SPACE)))  &kp F1       &kp F2        &kp F3    &kp F4     &kp F5         &trans    &trans    &msc MOVE_Y(-10)  &kp LS(LA(LC(F3)))  &trans          &trans        &kp LS(LA(LC(F4)))  &kp LC(F11)
                                                             &trans     &trans         &trans    &mkp MB1  &mkp MB2          &trans
             >;
@@ -363,7 +363,7 @@
         mouse+sym_ru {
             bindings = <
 &to 0                  &kp LS(AT_SIGN)  &en LS(DLLR)  &en SQT   &kp MINUS  &kp LS(PRCNT)                      &kp LS(AT_SIGN)   &en SQT             &trans          &trans        &trans              &trans
-&kp LA(LC(Y))          &en LS(AT)       &en LS(DLLR)  &en SEMI  &kp MINUS  &kp LS(N6)                         &msc MOVE_Y(10)   &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT     &trans
+&kp LA(LC(Y))          &en LS(AT)       &en LS(DLLR)  &en SEMI  &kp MINUS  &kp LS(N6)                         &msc MOVE_Y(10)   &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT     &layer_lock 9
 &kp LA(LC(LG(SPACE)))  &kp F1           &kp F2        &kp F3    &kp F4     &kp F5         &trans    &trans    &msc MOVE_Y(-10)  &kp LS(LA(LC(F3)))  &trans          &trans        &kp LS(LA(LC(F4)))  &kp LC(F11)
                                                                 &trans     &trans         &trans    &mkp MB1  &mkp MB2          &trans
             >;
@@ -374,7 +374,7 @@
         debugger+sym_en {
             bindings = <
 &to 0           &trans  &trans      &trans  &kp LS(DLLR)  &kp LS(AT)                    &kp LS(CARET)  &kp LS(UNDER)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &kp LC(F2)
-&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &kp PRINTSCREEN
+&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(QMARK)  &kp LS(PLUS)  &kp EQUAL      &layer_lock 10
 &kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8         &kp F9        &kp F10        &kp LC(PRINTSCREEN)
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
@@ -385,7 +385,7 @@
         debugger+sym_ru {
             bindings = <
 &to 0           &trans  &trans      &trans  &en LS(DLLR)  &en LS(AT)                    &en LS(CARET)  &kp LS(UNDER)  &en LS(AMPS)       &kp LS(STAR)  &en LS(POUND)  &kp LC(F2)
-&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(AMPERSAND)  &kp LS(PLUS)  &kp EQUAL      &kp PRINTSCREEN
+&trans          &trans  &trans      &trans  &trans        &trans                        &kp LS(EXCL)   &kp LS(UNDER)  &kp LS(AMPERSAND)  &kp LS(PLUS)  &kp EQUAL      &layer_lock 11
 &kp LA(LC(F2))  &trans  &kp LC(F2)  &trans  &trans        &trans      &trans    &trans  &kp F6         &kp F7         &kp F8             &kp F9        &kp F10        &kp LC(PRINTSCREEN)
                                             &trans        &trans      &trans    &trans  &trans         &trans
             >;
