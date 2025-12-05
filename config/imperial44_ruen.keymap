@@ -257,6 +257,8 @@
             compatible = "zmk,behavior-toggle-layer";
             label = "LAYER_LOCK";
             #binding-cells = <1>;
+            toggle-mode = "on";
+            locking;
         };
     };
 
