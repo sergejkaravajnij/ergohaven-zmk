@@ -299,7 +299,7 @@
         nav {
             bindings = <
 &to 0                  &kp LS(LA(LC(LEFT_BRACKET)))  &kp LS(LA(LC(UP)))    &kp LS(LC(I))  &kp LS(F6)  &kp LC(F12)                             &kp INS            &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans
-&kp LA(LC(LS(GRAVE)))  &kp LS(LA(LC(P)))             &kp LS(LA(LC(DOWN)))  &kp LC(Y)      &kp LC(Q)   &row_cut_copy                           &kp LS(LC(M))      &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &tog 3
+&kp LA(LC(LS(GRAVE)))  &kp LS(LA(LC(P)))             &kp LS(LA(LC(DOWN)))  &kp LC(Y)      &kp LC(Q)   &row_cut_copy                           &kp LS(LC(M))      &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &layer_lock 3
 &kp LA(INSERT)         &kp LA(LC(Z))                 &kp LC(LS(F7))        &mkp MB4       &mkp MB5    &kp LA(F7)     &trans    &trans         &kp DEL            &kp LC(LEFT)  &kp LA(DOWN)   &kp LA(UP)   &kp LC(RIGHT)  &kp LS(LA(LC(F12)))
                                                                                           &trans      &trans         &trans    &kp BACKSPACE  &kp LC(BACKSPACE)  &kp LC(DEL)
             >;
