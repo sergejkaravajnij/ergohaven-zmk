@@ -312,10 +312,10 @@
 
         sym_en {
             bindings = <
-&to 0              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &arr_assign                    &kp COMMA  &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp LC(PRINTSCREEN)
-&kp LS(LC(GRAVE))  &kp LESS_THAN     &kp GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop                      &kp N0     &kp N4  &kp N5  &kp N6  &kp PLUS      &layer_lock 4
-&none              &kp FSLH          &kp PIPE           &kp BSLH        &none            &none        &trans    &trans  &kp DOT    &kp N1  &kp N2  &kp N3  &kp SLASH     &kp K_CONTEXT_MENU
-                                                                        &kp DOT          &kp COMMA    &trans    &trans  &trans     &trans
+&to 0              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SEMI                     &kp COMMA  &kp N7  &kp N8  &kp N9  &kp ASTERISK  &trans
+&kp LS(LC(GRAVE))  &kp LESS_THAN     &kp GREATER_THAN   &kp LPAR        &kp RPAR         &kp COLON                    &kp N0     &kp N4  &kp N5  &kp N6  &kp PLUS      &layer_lock 4
+&none              &kp FSLH          &kp PIPE           &kp BSLH        &arr_assign      &obj_prop  &trans    &trans  &kp DOT    &kp N1  &kp N2  &kp N3  &kp SLASH     &kp K_CONTEXT_MENU
+                                                                        &kp DOT          &kp COMMA  &trans    &trans  &trans     &trans
             >;
 
             display-name = "Sym EN";
@@ -324,10 +324,10 @@
         sym_ru {
             display-name = "Sym RU";
             bindings = <
-&to 0              &en LEFT_BRACKET  &en RIGHT_BRACKET  &en LEFT_BRACE  &en RIGHT_BRACE  &arr_assign_ru                    &kp RU_COMMA  &kp N7  &kp N8  &kp N9  &kp ASTERISK  &kp LC(PRINTSCREEN)
-&kp LS(LC(GRAVE))  &en LESS_THAN     &en GREATER_THAN   &kp LPAR        &kp RPAR         &obj_prop_ru                      &kp N0        &kp N4  &kp N5  &kp N6  &kp PLUS      &layer_lock 5
-&none              &en FSLH          &en PIPE           &kp BSLH        &trans           &trans          &trans    &trans  &kp RU_DOT    &kp N1  &kp N2  &kp N3  &kp RU_SLASH  &kp K_CONTEXT_MENU
-                                                                        &kp RU_DOT       &kp RU_COMMA    &trans    &trans  &trans        &trans
+&to 0              &en LEFT_BRACKET  &en RIGHT_BRACKET  &en LEFT_BRACE  &en RIGHT_BRACE  &kp RU_SEMI                     &kp RU_COMMA  &kp N7  &kp N8  &kp N9  &kp ASTERISK  &trans
+&kp LS(LC(GRAVE))  &en LESS_THAN     &en GREATER_THAN   &kp LPAR        &kp RPAR         &kp RU_COLON                    &kp N0        &kp N4  &kp N5  &kp N6  &kp PLUS      &layer_lock 5
+&none              &en FSLH          &en PIPE           &kp BSLH        &trans           &trans        &trans    &trans  &kp RU_DOT    &kp N1  &kp N2  &kp N3  &kp RU_SLASH  &kp K_CONTEXT_MENU
+                                                                        &kp RU_DOT       &kp RU_COMMA  &trans    &trans  &trans        &trans
             >;
         };
 
