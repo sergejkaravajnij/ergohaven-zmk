@@ -144,35 +144,35 @@
         arr_assign: arr_assign {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            bindings = <&to_en &kp EQUAL &kp GREATER_THAN>;
             label = "ARR_ASSIGN";
         };
 
         obj_prop: obj_prop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
+            bindings = <&to_en &kp MINUS &kp GT>;
             label = "OBJ_PROP";
         };
 
         php_artisan: php_artisan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp P &kp H &kp P &kp SPACE &kp A &kp R &kp T &kp I &kp S &kp A &kp N &kp SPACE>;
+            bindings = <&to_en &kp P &kp H &kp P &kp SPACE &kp A &kp R &kp T &kp I &kp S &kp A &kp N &kp SPACE>;
             label = "PHP_ARTISAN";
         };
 
         cmp_style: cmp_style {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp M &kp P &kp O &kp S &kp E &kp R &kp SPACE &kp S &kp T &kp Y &kp L &kp E>;
+            bindings = <&to_en &kp C &kp O &kp M &kp P &kp O &kp S &kp E &kp R &kp SPACE &kp S &kp T &kp Y &kp L &kp E>;
             label = "CMP_STYLE";
         };
 
         cmp_analyze: cmp_analyze {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp M &kp P &kp O &kp S &kp E &kp R &kp SPACE &kp A &kp N &kp A &kp L &kp Y &kp Z &kp E>;
+            bindings = <&to_en &kp C &kp O &kp M &kp P &kp O &kp S &kp E &kp R &kp SPACE &kp A &kp N &kp A &kp L &kp Y &kp Z &kp E>;
             label = "CMP_ANALYZE";
         };
 
@@ -181,13 +181,6 @@
             #binding-cells = <0>;
             bindings = <&kp AT &kp LS(A) &kp D &kp A &kp M>;
             label = "MENT_ADAM";
-        };
-
-        ment_grig: ment_grig {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp AT &kp LS(G) &kp R &kp I &kp G &kp O &kp R &kp Y>;
-            label = "MENT_GRIG";
         };
 
         arr_assign_ru: arr_assign_ru {
