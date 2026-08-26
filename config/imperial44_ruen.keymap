@@ -392,7 +392,7 @@
         mentions {
             bindings = <
 &trans  &trans      &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &ment_adam  &trans  &trans  &trans  &ment_grig                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &ment_adam  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans      &trans  &trans  &trans  &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans  &trans      &trans    &trans  &trans  &trans
             >;
